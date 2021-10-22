@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    margin-left: 20%;
+    text-align: center;
+    border-bottom: 3px solid black;
+    width: 60%;
+    text-transform: capitalize;
+}
+
+nav {
+    text-align: center;
+}
+
+nav li {
+    display: inline-block;
+    margin: 5px;
+}
+
+nav li:last-of-type {
+    background-color: red;
+}
+
+a {
+    text-decoration: none;
+}
+
+.titulo {
+    background-image: radial-gradient(gray, white);
+    font-weight: bold;
+    font-size: 22px;
+}
+
+article {
+    margin-left: 20%;
+    width: 60%;
+}
+
+section {
+    margin-top: 20px;
+}
+
+section:first-of-type {
+    padding: 10px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+section p {
+    text-indent: 30px;
+}
+
+section:last-of-type {
+    padding: 10px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+article section ul li {
+    list-style-image: url(../img/estrella.png)
+}

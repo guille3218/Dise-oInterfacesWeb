@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+}
+
+td:hover, th:hover {
+    background-color: lightgreen;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 5px;
+}
+
+tr:nth-of-type(even) {
+    background-color: lightyellow;
+}
+
+tr th:first-of-type {
+    background-color: lightblue;
+}
+
+tr:first-of-type th {
+    background-color: lightgray;
+}
+
+tr:last-of-type td:last-of-type {
+    background-color: turquoise;
+}
