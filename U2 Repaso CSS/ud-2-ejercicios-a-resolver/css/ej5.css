@@ -1,0 +1,42 @@
+* {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background-color: lightyellow;
+    padding-bottom: 4%;
+    margin-bottom: 1%;
+}
+
+#leftcolumn {
+    float: left;
+    width: 20%;
+}
+
+#navigation {
+    background-color: lightgreen;
+    padding-bottom: 50%;
+    margin-bottom: 5%;
+}
+
+#linklist {
+    background-color: violet;
+    padding-bottom: 50%;
+    margin-bottom: 5%;
+}
+
+article {
+    background-color: lightblue;
+    padding-bottom: 23.7%;
+    margin-left: 1%;
+    float: right;
+    width: 79%;
+}
+
+footer {
+    clear: both;
+    background-color: lightcoral;
+    padding-bottom: 10%;
+}

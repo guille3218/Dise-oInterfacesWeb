@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ul {
+        list-style-type: none;
+        counter-reset: i;
+      }
+
+      /*
+      li::before {
+        counter-increment: i;
+        content: "> " counter(i) ". ";
+        color: green;
+        font-weight: bold;
+        background-color: black;
+      }
+
+      ul ul {
+        counter-reset: x;
+      }
+
+      ul ul li::before {
+        color: blue;
+        content: "> " counter(i) "." counter(x);
+        counter-increment: x;
+      }
+      */
+
+      li::before {
+        counter-increment: i;
+        content: "> " counters(i, ".");
+        color: green;
+        font-weight: bold;
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>
+        Item 3
+        <ul>
+          <li>Subitem 1</li>
+          <li>Subitem 2</li>
+        </ul>
+      </li>
+      <li>Item 4</li>
+    </ul>
+  </body>
+</html>

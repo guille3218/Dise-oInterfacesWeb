@@ -1,0 +1,26 @@
+ul {
+    margin-bottom: 0;
+}
+
+hr {
+    margin: 0;
+}
+
+li {
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid darkred;
+    border-bottom: none;
+    color: darkred;
+    background-color: beige;
+    margin: 0;
+    font-weight: bold;
+}
+
+li:hover {
+    border: 1px solid black;
+    border-bottom: 1px solid white;
+    color: grey;
+    background-color: white;
+    cursor: pointer;
+}
