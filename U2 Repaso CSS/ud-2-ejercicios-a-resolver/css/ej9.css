@@ -28,5 +28,5 @@ li:last-child {
 }
 
 li:nth-of-type(odd) {
-    border: 1px solid pink;
+    border: 1px dotted pink;
 }
