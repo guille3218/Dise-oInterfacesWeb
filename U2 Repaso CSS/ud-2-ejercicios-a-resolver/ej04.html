@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+    <link rel="stylesheet" href="css/ej4.css" />
+  </head>
+  <body>
+    <form method="post">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" name="nombre" id="nombre" /><br />
+        <label for="apellidos">Apellidos:</label><br />
+        <input type="text" name="apellidos" id="apellidos" /><br />
+        <label for="dni">DNI:</label><br />
+        <input type="text" name="dni" id="dni" /><br />
+        <label for="genero">Sexo:</label><br />
+        <select name="genero" id="genero">
+          <option value="hombre">Hombre</option>
+          <option value="mujer">Mujer</option>
+          <option value="otro">otro</option></select
+        ><br />
+
+        <fieldset>
+          <legend>Fecha de Nacimiento</legend>
+          <input type="date" name="fecha" id="fecha" />
+        </fieldset>
+
+        <label for="idioma">IDIOMA:</label>
+        <input type="radio" name="idioma" id="idioma" /><img
+          alt="Bandera España"
+          src="https://images.vexels.com/media/users/3/164599/isolated/lists/ce858535b77f22068049aca2457e59ad-circulo-de-icono-de-idioma-de-bandera-de-espana.png"
+        />Castellano <input type="radio" name="idioma" /><img
+          alt="Bandera Inglaterra"
+          src="https://esquit.files.wordpress.com/2013/10/british_flag.png"
+        />Ingles <input type="radio" name="idioma" /><img
+          alt="Bandera Francia"
+          src="https://www.jensen-localization.com/wp-content/uploads/2019/03/France.png"
+        />Frances
+      </fieldset>
+
+      <fieldset>
+        <legend>Sugerencias</legend>
+        <textarea name="sugerencias"></textarea>
+      </fieldset>
+
+      <button type="Submit">Enviar Datos</button>
+    </form>
+  </body>
+</html>

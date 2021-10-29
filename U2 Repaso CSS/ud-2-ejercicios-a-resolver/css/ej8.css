@@ -19,14 +19,17 @@ ul:hover {
     font-weight: bold;
 }
 
+li:first-child {
+    text-decoration: overline blue;
+}
+
 li:first-child::first-letter {
-    text-decoration: overline;
     font-size: 20px;
     color: blue;
 }
 
 li:last-child::first-letter {
-    text-decoration: underline;
+    text-decoration: overline;
     font-size: 20px;
     color: green;
 }
