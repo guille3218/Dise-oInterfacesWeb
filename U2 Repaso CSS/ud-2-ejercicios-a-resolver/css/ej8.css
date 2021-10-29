@@ -3,10 +3,10 @@
 }
 
 ul {
+    text-align: center;
     background-color: lightyellow;
     border: solid 1px black;
-    list-style-type: none;
-    width: 8%;
+    width: 20%;
     height: 110px;
     padding: 10px;
     border-radius: 20px;
@@ -19,13 +19,13 @@ ul:hover {
     font-weight: bold;
 }
 
-li:first-child {
+li:first-child::first-letter {
     text-decoration: overline;
     font-size: 20px;
     color: blue;
 }
 
-li:last-child {
+li:last-child::first-letter {
     text-decoration: underline;
     font-size: 20px;
     color: green;
