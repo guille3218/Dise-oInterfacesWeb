@@ -8,7 +8,7 @@ body {
     font: normal 1rem/1.25 Verdana, sans-serif;
     word-break: break-word;
     background-color: #fafafa;
-    counter-reset: h1 h2 h3;
+    counter-reset: h1;
 }
 
 p {
@@ -32,8 +32,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    counter-increment: h1;
-    counter-reset: h2 h3;
+    counter-reset: h2;
     font-size: 2.5rem;
     font-weight: 300;
     line-height: 1.75;
@@ -42,29 +41,30 @@ h1 {
 }
 
 h2 {
-    counter-increment: h2;
     counter-reset: h3;
     font-size: 2rem;
     line-height: 1.25;
 }
 
 h3 {
-    counter-increment: h3;
     font-size: 1.75rem;
     line-height: 1.25;
 }
 
 h1::before {
+    counter-increment: h1;
     color: #FF0000;
     content: counter(h1, decimal) ". "
 }
 
 h2::before {
+    counter-increment: h2;
     color: #B62E40;
     content: counter(h1, decimal) "."counter(h2, decimal) ". "
 }
 
 h3::before {
+    counter-increment: h3;
     color: #F97083;
     content: counter(h1, decimal) "."counter(h2, decimal) "."counter(h3, lower-alpha) ". "
 }

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+* {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a::before {
+    content: "→";
+}
+
+h2::first-letter {
+    font-size: 60px;
+}
+
+abbr::after {
+    content: "(" attr(title) ")"
+}
+
+h2+p {
+    text-indent: 2em;
+}
+
+li:first-child {
+    background-color: yellow;
+}
+
+li:last-child {
+    background-color: gray;
+}
+
+li:nth-of-type(odd) {
+    border: 1px solid pink;
+}
