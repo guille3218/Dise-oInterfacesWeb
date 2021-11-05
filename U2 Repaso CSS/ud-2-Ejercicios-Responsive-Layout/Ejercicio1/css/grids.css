@@ -1,0 +1,53 @@
+body{
+   margin:0 20%;
+}
+
+.grid-container{
+    display:grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+.grid-container div {
+    border: 1px solid #000;
+    padding: 20px;
+  }
+
+.green{
+    background-color: lime;
+    grid-column: 1 / span 4
+}
+
+.green:first-child{
+    height: 30px;
+}
+
+.red{
+    background-color: red;
+    grid-column: 1 / span 1;
+}
+
+.magenta{
+    background-color: magenta;
+    height:60px;
+}
+
+.salmon{
+    background-color: lightsalmon;
+    height: 120px;
+}
+
+.blue{
+    background-color: blue;
+    height: 60px;
+}
+
+.second-grid-container{
+    grid-column: 2 / span 3;
+    display:grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+}
+
+.magenta, .salmon{
+    grid-column: 1/span 3;
+}
