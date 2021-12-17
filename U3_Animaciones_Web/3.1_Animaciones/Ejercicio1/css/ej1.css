@@ -1,13 +1,16 @@
 @keyframes faded1 {
     0%   { opacity: 1;background-image: url("../img/6.jpg");}
-    25% { opacity: 0.5;background-image: url("../img/6.jpg");}
-    40% { opacity: 0.25;background-image: url("../img/6.jpg");}
+    25%  { opacity: 0;background-image: url("../img/6.jpg");}
     50%  { opacity: 0;background-image: url("../img/7.jpg");}
-    65%  { opacity: 0.25;background-image: url("../img/7.jpg");}
-    75% { opacity: 0.5;background-image: url("../img/7.jpg");}
     100% { opacity: 1;background-image: url("../img/7.jpg");}
   }
 
+  @keyframes faded5 {
+    0%   { opacity: 1;background-image: url("../img/4.jpg");}
+    25%  { opacity: 0;background-image: url("../img/4.jpg");}
+    50%  { opacity: 0;background-image: url("../img/10.jpg");}
+    100% { opacity: 1;background-image: url("../img/10.jpg");}
+  }
 
 body{
     background-color: rgb(120, 76, 201);
@@ -60,6 +63,7 @@ body{
 }
 
 .photo5{
+    animation: faded5 5s infinite ease;
     background-size: cover;
     background-image:url("../img/4.jpg");
     border-radius: 10px;
