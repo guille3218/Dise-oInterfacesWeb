@@ -1,0 +1,17 @@
+{
+  "name": "4.2_componentes_sass",
+  "version": "1.0.0",
+  "description": "Ejercicio 4.2 Diseño de Interfaces Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css",
+    "genera-doc": "sassdoc scss -d sassdocs"
+  },
+  "author": "Guillermo",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sassdoc": "^2.7.3"
+  }
+}
