@@ -6,12 +6,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "scss": "node-sass --watch scss -o css",
-    "genera-doc": "sassdoc scss -d sassdocs"
+    "genera-doc": "sassdoc scss -d sassdocs --theme herman"
   },
   "author": "Guillermo",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^7.0.1",
-    "sassdoc": "^2.7.3"
+    "sass": "^1.49.8",
+    "sassdoc": "^2.7.3",
+    "sassdoc-theme-herman": "^4.0.2"
   }
 }

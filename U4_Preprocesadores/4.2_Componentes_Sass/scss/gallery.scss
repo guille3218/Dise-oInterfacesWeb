@@ -1,11 +1,25 @@
+///
+///@author Guillermo Moreno Rodriguez
+///
+
+///
+/// Máximo de columnas por defecto
+///
 $MAX_COLUMNS: 4 !default;
+
+///
+///Columnas dependiendo del tamaño de pantalla
+///
 $RESPONSIVE_COLUMNS: (
   1024px: 3,
   768px: 2,
   480px: 1,
 );
 
-///@params
+///
+/// Define cuantas columnas se mostrarán
+/// @param {Number} $n - Numero de columnas que se quiere mostrar
+///
 @mixin resize($n) {
   .gallery img {
     width: calc(100% / #{$n});
@@ -28,8 +42,9 @@ body {
 
 @include resize(4);
 
+/* Mostrar x columnas segun el tamaño de la pantalla */
 @each $size, $value in $RESPONSIVE_COLUMNS {
-  @media (max-width: $size) {
+  @media screen and (max-width: $size) {
     @include resize($value);
   }
 }

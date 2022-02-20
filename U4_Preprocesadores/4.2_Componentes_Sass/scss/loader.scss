@@ -1,11 +1,24 @@
+///
+///@author Guillermo Moreno Rodriguez
+///
+
+///
+///Duración de la animación
+///
 $duration: 10s !global;
 
+///
+/// Resetea el margen y pading en 0 y alinea el texto al centro
+///
 @mixin reset {
   margin: 0;
   padding: 0;
   text-align: center;
 }
 
+///
+/// Asigna la posicion en absoluta, el contenido a cadena vacia y arriba e izquierda a 0
+///
 @mixin reset-load {
   position: absolute;
   content: "";
@@ -13,6 +26,11 @@ $duration: 10s !global;
   top: 0;
 }
 
+///
+/// Proporciona un tamaño
+/// @param {Number} $width [100%] - Valor de ancho
+/// @param {Number} $height [50px] - Valor altura
+///
 @mixin size($width: 100%, $height: 50px) {
   width: $width;
   height: $height;
