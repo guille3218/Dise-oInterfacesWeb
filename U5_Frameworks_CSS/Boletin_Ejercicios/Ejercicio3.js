@@ -43,11 +43,36 @@ function insertar_dato(dato) {
   let datos = document.getElementById("datos");
 
   let div = document.createElement("div");
+  div.setAttribute("class", "col m12 valign-wrapper");
 
+  let imgDiv = document.createElement("div");
+  imgDiv.setAttribute("class", "col m2 green");
   let img = document.createElement("img");
   img.setAttribute("src", dato.data.image);
-  img.setAttribute("class", "col m3 circle responsive-img");
-  div.appendChild(img);
+  img.setAttribute("class", "circle responsive-img ");
+  imgDiv.appendChild(img);
+  div.appendChild(imgDiv);
+
+  let nombreDiv = document.createElement("div");
+  nombreDiv.setAttribute("class", "col m2 green lighten-2");
+  let nombre = document.createElement("p");
+  nombre.innerHTML = dato.data.name;
+  nombreDiv.appendChild(nombre);
+  div.appendChild(nombreDiv);
+
+  let categoriaDiv = document.createElement("div");
+  categoriaDiv.setAttribute("class", "col m2 green");
+  let categoria = document.createElement("p");
+  categoria.innerHTML = dato.data.category;
+  categoriaDiv.appendChild(categoria);
+  div.appendChild(categoriaDiv);
+
+  let descriptionDiv = document.createElement("div");
+  descriptionDiv.setAttribute("class", "col m6 green lighten-2");
+  let description = document.createElement("p");
+  description.innerHTML = dato.data.description;
+  descriptionDiv.appendChild(description);
+  div.appendChild(descriptionDiv);
 
   datos.appendChild(div);
 }

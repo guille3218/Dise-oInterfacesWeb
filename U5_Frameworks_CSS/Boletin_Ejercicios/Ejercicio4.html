@@ -1,25 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ejercicio 4</title>
-    <!--Import Google Icon Font-->
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!--Import materialize.css-->
-    <link
-      type="text/css"
-      rel="stylesheet"
-      href="css/materialize.min.css"
-      media="screen,projection"
-    />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 4</title>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <!--Import materialize.css-->
+  <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+  <style>
+    th {
+      color: grey;
+    }
+
+    th,
+    td {
+      text-align: center;
+    }
+
+    .collapsible {
+      margin: auto;
+      width: 95%;
+    }
+
+
+    .card-panel {
+      background: linear-gradient(to right, rgb(250, 193, 88), white);
+    }
+
+    .card-title {
+      background-color: rgba(0, 0, 0, 0.5);
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="row">
+    <!-- PESTAÑAS -->
+    <ul class="tabs tabs-transparent">
+      <li class="tab col s4 orange white-text">
+        <a href="#tab-1">
+          <i class="tiny material-icons">calendar_today</i>
+          RECORDS
+        </a>
+      </li>
+      <li class="tab col s4 orange white-text ">
+        <a href="#tab-2">
+          <i class="tiny material-icons">access_alarm</i>
+          NOTICIAS
+        </a>
+      </li>
+      <li class="tab col s4 orange white-text">
+        <a href="#tab-3">
+          <i class="tiny material-icons">settings</i>
+          APPS
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!--1 Pestaña-->
+  <div id="tab-1" class="col s12 ">
+    <table class="striped">
+      <thead>
+        <tr>
+          <th>Participante</th>
+          <th>Apuesta</th>
+          <th>Ganado</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Mandragora</td>
+          <td>10.00€</td>
+          <td><i class=" material-icons orange-text">check_circle</i></td>
+        </tr>
+        <tr>
+          <td>Vesubio</td>
+          <td>20.35€</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Irpano</td>
+          <td>15.40€</td>
+          <td><i class=" material-icons orange-text">check_circle</i></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!--2 Pestaña-->
+  <div id="tab-2" class="col s12">
+    <ul class="collapsible">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Local</div>
+        <div class="collapsible-body">
+          <div class="card-panel">
+            <i class="material-icons">info</i>
+            Item
+          </div>
+          <div class="card-panel">
+            <i class="material-icons">info</i>
+            Item
+          </div>
+          <div class="card-panel">
+            <i class="material-icons">info</i>
+            Item
+          </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Sucesos</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Política</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">chevron_right</i>Noticias</div>
+        <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+      </li>
+    </ul>
+
+  </div>
+
+  <!--3 Pestaña-->
+  <div id="tab-3" class="col s12">
+    <div class=" row">
+      <div class="col s6 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/tetris.png" class="responsive-img">
+            <span class="card-title">Tetris</span>
+          </div>
+          <div class="card-content">
+            <p>El clásico de siempre</p>
+          </div>
+          <div class="card-action">
+            <a href="#">+ 1 VOTO</a>
+            <p><i class=" material-icons yellow-text">star</i><i class=" material-icons yellow-text">star</i><i
+                class=" material-icons yellow-text">star</i><i class=" material-icons">star</i><i
+                class=" material-icons">star</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/cards.png" class="responsive-img">
+            <span class="card-title">Solitario</span>
+          </div>
+          <div class="card-content">
+            <p>Juego de cartas para estar solo</p>
+          </div>
+          <div class="card-action">
+            <a href="#">+ 1 VOTO</a>
+            <p><i class=" material-icons yellow-text">star</i><i class=" material-icons">star</i><i
+                class=" material-icons">star</i><i class=" material-icons">star</i><i class=" material-icons">star</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/arcade.png" class="responsive-img">
+            <span class="card-title">24 Arcade Game</span>
+          </div>
+          <div class="card-content">
+            <p>Muchos juegos de arcade</p>
+          </div>
+          <div class="card-action">
+            <a href="#">+ 1 VOTO</a>
+            <p><i class=" material-icons yellow-text">star</i><i class=" material-icons yellow-text">star</i><i
+                class=" material-icons yellow-text">star</i><i class=" material-icons">star</i><i
+                class=" material-icons">star</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/dados.png" class="responsive-img">
+            <span class="card-title">Kiriki</span>
+          </div>
+          <div class="card-content">
+            <p>Juego vasco de dados</p>
+          </div>
+          <div class="card-action">
+            <a href="#">+ 1 VOTO</a>
+            <p><i class=" material-icons yellow-text">star</i><i class=" material-icons yellow-text">star</i><i
+                class=" material-icons yellow-text">star</i><i class=" material-icons yellow-text">star</i><i
+                class=" material-icons">star</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/flight.png" class="responsive-img">
+            <span class="card-title">Flight Simulator</span>
+          </div>
+          <div class="card-content">
+            <p>Simulador de vuelo</p>
+          </div>
+          <div class="card-action">
+            <a href="#">+ 1 VOTO</a>
+            <p><i class=" material-icons yellow-text">star</i><i class=" material-icons yellow-text">star</i><i
+                class=" material-icons">star</i><i class=" material-icons">star</i><i class=" material-icons">star</i>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col s6 m4">
+        <div class="card">
+          <div class="card-image">
+            <img src="img/puzzle.png" class="responsive-img">
+            <span class="card-title">Puzzlemanía</span>
+          </div>
+          <div class="card-content">
+            <p>Aprender a puzzlear</p>
+          </div>
+          <div class="card-action">
+            <a href="#">+ 1 VOTO</a>
+            <p><i class=" material-icons yellow-text">star</i><i class=" material-icons yellow-text">star</i><i
+                class=" material-icons yellow-text">star</i><i class=" material-icons">star</i><i
+                class=" material-icons">star</i>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
-  </body>
+    <script>
+      $(document).ready(function () {
+        $('.tabs').tabs();
+      });
+      $(document).ready(function () {
+        $('.collapsible').collapsible();
+      });
+    </script>
+</body>
+
 </html>
