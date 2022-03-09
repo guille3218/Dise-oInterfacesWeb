@@ -1,33 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Dashboard</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <a><img src="" /></a>
-      </div>
-      <div class="profile-details">
-        <div class="aside"></div>
-        <div class="graphics">
-          <div class="graphic1"></div>
-          <div class="graphic2"></div>
-          <div class="graphic3"></div>
-          <div class="graphic4"></div>
-          <div class="graphic5"></div>
-          <div class="graphic6"></div>
-        </div>
-      </div>
-    </header>
-    <div class="container"></div>
-    <footer>
-      <div class="company-datails"><p>I.E.S. Alixar 2022</p></div>
-      <div class="author-details"><p>Guillermo Moreno Rodríguez 2ºDAW</p></div>
-    </footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://kit.fontawesome.com/460514ff0f.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <header>
+    <p><a href="" class="logo"><img src="img/logo.png" /></a> <span class="profile-details">
+        <a href="">Log Out</a>
+        <a href="">Guillermo</a>
+        <i class="fa-solid fa-user profile-icon"></i>
+        <i class="fa-solid fa-bars menu-bars"></i>
+      </span></p>
+  </header>
+  <div class="container">
+    <div id="aside" class="aside">
+      <p>
+      <h1><a href=""><i class="fa-solid fa-house"></i>Inicio</a></h1>
+      <h1><a href=""><i class="fa-solid fa-badge-dollar"></i>Planes</a></h1>
+      <h1><a href=""><i class="fa-solid fa-circle-info"></i>Información</a></h1>
+      <h1><a href=""><i class="fa-solid fa-circle-question"></i>Ayuda</a></h1>
+      </p>
+    </div>
+    <div class="graphics">
+      <div id="graphic1" style="width: 500px; height: 250px;"></div>
+      <div id="graphic2" style="width: 500px; height: 300px;"></div>
+      <div id="graphic3" style="width: 500px; height: 200px;"></div>
+      <div id="graphic4" style="width: 500px; height: 250px;"></div>
+      <div id="graphic5" style="width: 500px; height: 300px;"></div>
+      <div id="graphic6" style="width: 500px; height: 300px;"></div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <p><span class="company-datails">I.E.S. Alixar 2022</span> <span class="author-details">Guillermo Moreno Rodríguez
+          2ºDAW</span></p>
+    </div>
+
+  </footer>
+</body>
+
 </html>

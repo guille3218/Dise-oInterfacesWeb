@@ -1,12 +1,55 @@
-@import "./_base.scss";
+@import "base";
+
 
 body {
   margin: 0 auto;
   padding: 0;
+  background-color: $backgroundColor;
 }
 
 header {
   background-color: $headerColor;
   height: 80px;
   width: 100%;
+}
+
+footer{
+  background-color: $footerColor;
+  height: 40px;
+  width: 100%;
+}
+
+.container{
+  display: flex;
+}
+
+.graphics{
+  display: flex;  
+  flex-wrap: wrap;
+}
+
+.menu-bars{
+  visibility: hidden;
+}
+@media (max-width: 600px) {
+  .aside{
+    visibility: hidden;
+  }
+
+  .profile-details{
+    visibility: hidden;
+  }
+  .profile-icon{
+    visibility: visible;
+    float:left;
+    font-size: 50px;
+  }
+  .logo{
+    float:right;
+  }
+  .menu-bars{
+    visibility: visible;
+    float:right;
+    font-size: 50px;
+  }
 }

@@ -5,11 +5,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss":"node-sass --watch scss -o css"
+    "scss": "node-sass --watch scss -o css"
   },
   "author": "Guillermo",
   "license": "ISC",
   "dependencies": {
+    "bootstrap-icons": "^1.8.1",
     "node-sass": "^7.0.1"
   }
 }

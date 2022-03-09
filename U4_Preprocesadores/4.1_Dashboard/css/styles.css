@@ -1,3 +1,79 @@
-@import url("../scss/_base.scss");
-@import url("../scss/_components.scss");
-@import url("../scss/_layout.scss");
+* {
+  margin: 0 0;
+  font-family: 'Fredoka', sans-serif; }
+
+* {
+  margin: 0 0;
+  font-family: 'Fredoka', sans-serif; }
+
+.aside {
+  background-color: #84CC89;
+  width: 40%;
+  height: 100vh;
+  text-align: center; }
+
+.aside > * {
+  margin: 20px; }
+
+.aside a {
+  text-decoration: none;
+  color: black; }
+
+.author-details, .profile-details {
+  margin-top: 20px;
+  float: right; }
+
+.profile-details > a, .profile-details > i {
+  margin-right: 15px;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black; }
+
+.graphics > * {
+  margin: 20px; }
+
+* {
+  margin: 0 0;
+  font-family: 'Fredoka', sans-serif; }
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #B05486; }
+
+header {
+  background-color: #52ac58;
+  height: 80px;
+  width: 100%; }
+
+footer {
+  background-color: #D188B0;
+  height: 40px;
+  width: 100%; }
+
+.container {
+  display: flex; }
+
+.graphics {
+  display: flex;
+  flex-wrap: wrap; }
+
+.menu-bars {
+  visibility: hidden; }
+
+@media (max-width: 600px) {
+  .aside {
+    visibility: hidden; }
+  .profile-details {
+    visibility: hidden; }
+  .profile-icon {
+    visibility: visible;
+    float: left;
+    font-size: 50px; }
+  .logo {
+    float: right; }
+  .menu-bars {
+    visibility: visible;
+    float: right;
+    font-size: 50px; } }
